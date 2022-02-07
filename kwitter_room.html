@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-analytics.js"></script>
+    <link rel="stylesheet" href="room.css"> 
+</head>
+<body>
+    <button id="logout" onclick="logout();"class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+    <h1>Kwitter</h1>
+    
+    <h3 id="user_name"></h3>
+    <label id="room">Add Room</label>
+    <br>
+    <input type="text" placeholder="Room name" id="room_name">
+    <p id="caution"><b id="danger">NOTE : </b> Do not share you room to anyone. Share to trusted people only.</p>
+    <button onclick="addRoom()">Let's Chat</button>
+    <br><br>
+    <label id="trending_rooms">Trending rooms</label><br><br><br>
+    <div id="output"></div>
+
+    
+    
+    <!--JavaScript-->
+    
+    
+    
+    
+    <script src="kwitter_room.js"></script>
+    
+</body>
+
+</html>
